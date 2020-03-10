@@ -219,14 +219,14 @@ class AutoMovement(threading.Thread):
                 #    PBR.SetMotor2(driveLeft) 
 
                 # Wait for 1/2 of a second before reading again
-                thread.sleep(0.5)
+                time.sleep(0.5)
             elif movementMode == AUTO_MODE:
                 # Automatic movement mode, updates five times per second
 
                 # TODO: Fill in logic here
 
                 # Wait for 1/5 of a second before reading again
-                thread.sleep(0.2)
+                time.sleep(0.2)
             else: 
                 # Unexpected, print an error and wait a second before trying again
                 print 'Unexpected movement mode %d' % (movementMode)
